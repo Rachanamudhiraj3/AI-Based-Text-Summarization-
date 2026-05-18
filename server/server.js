@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use("/api", summarizeRoutes);
 app.get("/", (req, res) => {
-  res.send("Server is running 🚀");
+  res.send("Server is running ");
 });
 
 app.listen(5000, () => {

@@ -59,10 +59,10 @@ function App() {
 
       const formData = new FormData();
 
-      formData.append("file", file);
+      formData.append("pdf", file);
 
       const res = await axios.post(
-        "https://ai-based-text-summarization-2sh3.onrender.com/api/summarize",
+        "https://ai-based-text-summarization-2sh3.onrender.com/api/summarize/pdf",
         formData
       );
 

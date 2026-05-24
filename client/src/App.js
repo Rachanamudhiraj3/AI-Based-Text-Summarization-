@@ -22,7 +22,7 @@ function App() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/summarize",
+        "https://ai-based-text-summarization-2sh3.onrender.com/api/summarize",
         {
           text: text,
         }
@@ -62,7 +62,7 @@ function App() {
       formData.append("file", file);
 
       const res = await axios.post(
-        "http://localhost:5000/api/summarize-pdf",
+        "https://ai-based-text-summarization-2sh3.onrender.com/api/summarize",
         formData
       );
 
